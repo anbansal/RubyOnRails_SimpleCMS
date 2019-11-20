@@ -1,0 +1,27 @@
+<% @page_title = "Show Admin User"%>
+
+<%= link_to("<< Back to List", admin_users_path, :class => 'back-link') %>
+
+<div class="admin_users show">
+  <h2>Show Admin User</h2>
+
+  <table summary="Admin_user detail view">
+    <tr>
+      <th>Name</th>
+      <td><%= @admin_user.name %></td>
+    </tr>
+    <tr>
+      <th>Username</th>
+      <td><%= @admin_user.username %></td>
+    </tr>
+    <tr>
+      <th>Email-ID:</th>
+      <td><%= @admin_user.email %></td>
+    </tr>    
+    <tr>
+      <th>Updated</th>
+      <td><%= @admin_user.updated_at %></td>
+    </tr>
+  </table>
+
+</div>

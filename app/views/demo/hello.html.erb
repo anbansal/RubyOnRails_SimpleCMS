@@ -1,0 +1,10 @@
+<h1>Hello from Hello</h1>
+<% @array.each do |n| %>
+<%= n %><br/>
+<% end%>
+<%= link_to('Index Page',{:action => 'index'})%>
+
+<br/>
+
+ID: <%= @id %><br/>
+Page: <%= params[:page]%>
